@@ -6,46 +6,65 @@ body {
     box-sizing: border-box;
     direction: rtl; /* Set the page to RTL */
     text-align: right;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    text-align: center;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
 }
 
-.hero {
+nav ul li a:hover {
+    background-color: #ff8000;
+    border-radius: 5px;
+}
+
+/* Centered logo and content */
+.center-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Takes most of the screen height */
     background-color: #282828;
     color: white;
     text-align: center;
-    padding: 50px 0;
 }
 
-.hero h2 {
-    font-size: 48px;
+.center-logo-image {
+    width: 200px; /* Adjust size of logo */
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.hero p {
+.center-logo h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.center-logo p {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -54,9 +73,10 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    font-size: 18px;
 }
 
+/* Product Section */
 .products {
     background-color: #f4f4f4;
     padding: 50px 0;
